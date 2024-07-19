@@ -26,7 +26,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 /*------------------------------------------GENERAL STYLES------*/
 
 body {
@@ -89,6 +88,45 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-/* MEDIA QUERIES */
+.navbar-light {
+    background: blue;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar > .container-fluid {
+    position: relative;
+    padding: 0;
+    bottom: -20px;
+}
+
+.navbar-nav a {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 1.5rem;
+}
+
+#home {
+    background-color: rgb(0, 131, 207);
+}
+
+#resume {
+    background-color: rgb(146, 1, 1);
+}
+
+#contact {
+    background-color: rgb(9, 88, 9);
+}
+
+#download {
+    background-color: rgb(0, 85, 196);
+}
