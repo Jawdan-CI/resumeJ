@@ -140,14 +140,14 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #525252;
+    background-color: blue;
     color: #fafafa;
     min-height: 120px;
     width: 100%;
     margin: 0;
 }
 
-.cv-pdf i {
+.cv-pdf {
     font-size: 18px;
     color: #fafafa;
     text-align: center;
@@ -158,11 +158,14 @@ footer {
     -o-transition: all 0.35s ease-in-out;
 }
 
-.cv-pdf i:hover {
+.cv-pdf:hover {
     color: #e84610;
 }
 
 .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
     padding-bottom: 15px;
 }
 
@@ -188,6 +191,11 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+.custom {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* Media Queries */
