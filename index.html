@@ -12,26 +12,38 @@
 <!----------------------------------------------------------------HEADER SECTION------>
     <header>
         <div class="row header-content">
-            <div class="col-12 col-lg-6 image">
-                <img src="assets/images/09d3e979-0f4e-40f3-b0ba-a10e848a0e7b.jpeg" alt="Profile Image" class="mainImage">
+            <div class="col-12 col-lg-6 image-container">
+                <img src="assets/images/09d3e979-0f4e-40f3-b0ba-a10e848a0e7b.jpeg" alt="Profile Image" class="mainImage d-none d-md-block">
             </div>
             <div class="col-12 col-lg-6 name-section">
                 <h2 class="name">JAWDAN ANGELOS</h2>
                 <h3 class="title">Full-Stack Developer</h3>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light" style="bottom: 30px; z-index: -2;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="/index.html" id="home">Home</a>
-                    <a class="nav-link" href="#" id="resume">Resume</a>
-                    <a class="nav-link" href="#" id="contact">Contact</a>
-                    <a class="nav-link" href="#" id="download">Download</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="resume" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="download" href="#">Download</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-
 <!----------------------------------------------------------------MAIN SECTION------>
     <section>
 
