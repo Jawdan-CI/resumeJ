@@ -35,14 +35,24 @@ body, html {
     overflow-x: hidden;
 }
 
-/*------------------------------------------HEADER SECTION------*/
+/*------------------------------------------COLORS--------------*/
 
-.row>* {
-    padding: 0;
+.bg-color-contact-details {
+    background: rgb(240, 240, 100);
 }
 
+.bg-color-about-me {
+    background:rgb(0, 131, 207);
+}
+
+/*------------------------------------------HEADER SECTION------*/
+
+/* .row>* {
+    padding: 0;
+} */
+
 header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -121,24 +131,28 @@ header {
 
 #home {
     background-color: rgb(0, 131, 207);
+    color: white;
 }
 
 #resume {
     background-color: rgb(146, 1, 1);
+    color: white;
 }
 
 #contact {
-    background-color: rgb(9, 88, 9);
+    background-color: rgb(3, 182, 3);
+    color: white;
 }
 
 #download {
     background-color: rgb(0, 85, 196);
+    color: white;
 }
 
 /*------------------------------------------FOOTER------*/
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: blue;
@@ -199,6 +213,18 @@ footer {
     justify-content: space-evenly;
 }
 
+/*------------------------------------------MAIN CONTENT SECTION------*/
+
+.mainContent {
+    position: relative;
+    margin-top: 100px;
+    z-index: -2;
+}
+
+#contact-details {
+    height: 600px;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
@@ -209,6 +235,10 @@ footer {
 
     .name, .title {
         text-shadow: 2px 2px 3px blue;
+    }
+
+    .mainContent-sm {
+        margin-top: 40px;
     }
 }
 
@@ -229,6 +259,10 @@ footer {
 
     .name-section {
         padding-left: 170px;
+    }
+
+    .mainContent-md {
+        margin-top: 40px;
     }
 }
 
