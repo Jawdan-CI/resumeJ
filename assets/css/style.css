@@ -75,13 +75,14 @@ header {
 
 .name {
     font-family: 'Anton SC', sans-serif;
-    text-align: right;
+    text-align: center;
     font-size: 4rem;
+    padding-top: 20px;
 }
 
 .title {
     font-family: 'Teko', sans-serif;
-    text-align: right;
+    text-align: center;
     font-size: 2rem;
 }
 
@@ -200,6 +201,17 @@ footer {
 
 /* Media Queries */
 
+@media (max-width: 768px) {
+    header {
+        background-color: none;
+        background: url('../images/09d3e979-0f4e-40f3-b0ba-a10e848a0e7b.jpeg') no-repeat center center / cover;
+    }
+
+    .name, .title {
+        text-shadow: 2px 2px 3px blue;
+    }
+}
+
 @media (max-width: 992px) and (min-width: 768px) { 
     header {
         background-color: blue;
@@ -220,14 +232,24 @@ footer {
     }
 }
 
-
-@media (max-width: 768px) {
-    header {
-        background-color: none;
-        background: url('../images/09d3e979-0f4e-40f3-b0ba-a10e848a0e7b.jpeg') no-repeat center center / cover;
+@media (min-width: 1200px) {
+    .h2-lg-lg {
+        font-size: 75px;
     }
 
-    .name, .title {
-        text-shadow: 2px 2px 3px blue;
+    .h3-lg-lg {
+        font-size: 45px;
     }
+
+}
+
+@media (min-width: 1400px) {
+    .h2-lg-xl {
+        font-size: 100px;
+    }
+
+    .h3-lg-xl {
+        font-size: 60px;
+    }
+
 }
