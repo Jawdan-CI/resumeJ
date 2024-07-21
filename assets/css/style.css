@@ -196,13 +196,38 @@ footer {
 /*------------------------------------------MAIN CONTENT SECTION------*/
 
 .mainContent {
+    color: black;
     position: relative;
     margin-top: 100px;
     z-index: -2;
 }
 
-#contact-details {
-    height: 600px;
+
+/* Contact Details */
+
+.contact-heading {
+    margin-top: 40px;
+    color: red;
+    text-shadow: 1px 3px 3px white;
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Anton SC', sans-serif;
+}
+
+.contact-table ul  {
+    padding: 50px 0;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.contact-table ul li {
+    padding: 20px 200px;
+    text-align: leftr;
+}
+
+.contact-type {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 /* Media Queries */
@@ -219,6 +244,16 @@ footer {
 
     .mainContent-sm {
         margin-top: 200px;
+    }
+
+    .contact-table ul  {
+        padding: 20px 0;
+    }
+
+    .contact-table ul li {
+        padding: 5px 10px;
+        text-align: left;
+        font-size: 1rem;
     }
 }
 
@@ -243,6 +278,24 @@ footer {
 
     .mainContent-md {
         margin-top: 100px;
+    }
+
+    .contact-table ul  {
+        padding: 20px 0;
+    }
+
+    .contact-table ul li {
+        padding: 20px 10px;
+        text-align: left;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .contact-table ul li {
+        padding: 20px 10px;
+        text-align: left;
+        font-size: 1.8rem;
     }
 }
 
